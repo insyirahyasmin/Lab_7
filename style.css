@@ -1,84 +1,148 @@
+/* ===== GLOBAL ===== */
 * {
     margin: 0;
     padding: 0;
-    font-family: Poppins, sans-serif;
     box-sizing: border-box;
+    font-family: Poppins, sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #ff9ec4, #b284ff);
-    color: #fff;
+    background: linear-gradient(135deg, #ffd6e8, #ffe4cc, #ffffff);
+    background-attachment: fixed;
+    color: #6b3e5c;
     min-height: 100vh;
 }
 
+/* ===== HEADER ===== */
 header {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    background: #ffffffcc;
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid #ffc2d1;
 }
 
 header h1 {
-    font-size: 32px;
+    color: #d16e8d;
+    font-size: 34px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* ===== NAVIGATION ===== */
 nav a {
-    margin: 0 15px;
     text-decoration: none;
-    color: white;
+    margin: 0 15px;
+    color: #ff7f9f;
     font-weight: bold;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #ff477e;
+}
+
+/* ===== CONTAINER ===== */
 .container {
     width: 50%;
     margin: 40px auto;
-    padding: 20px;
-    background: rgba(255,255,255,0.3);
-    border-radius: 12px;
-    backdrop-filter: blur(5px);
+    padding: 25px;
+    background: #ffffffcc;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 15px rgba(255, 160, 180, 0.3);
 }
 
+/* ===== TITLES ===== */
 .subtitle {
     text-align: center;
+    font-size: 24px;
+    color: #d16e8d;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
+/* ===== FORM ELEMENTS ===== */
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #c05a7e;
 }
 
 input, select {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border-radius: 6px;
-    border: none;
-}
-
-input[type="submit"], .btn {
-    background: #6a00ff;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 15px;
+    margin-top: 6px;
     border-radius: 8px;
-    display: inline-block;
-    text-align: center;
+    border: 1px solid #ffc9d8;
+    background: #fff9fb;
 }
 
+input:focus, select:focus {
+    outline: none;
+    border-color: #ff84a8;
+    box-shadow: 0 0 5px #ffa4bf;
+}
+
+/* ===== BUTTONS ===== */
+input[type="submit"], .btn {
+    display: inline-block;
+    background: #ff88a5;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover, .btn:hover {
+    background: #ff698f;
+}
+
+/* ===== TABLE ===== */
 table {
     width: 100%;
-    margin-top: 20px;
     border-collapse: collapse;
+    margin-top: 25px;
 }
 
-th, td {
+th {
+    background: #ffb3c6;
     padding: 12px;
-    background: rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.4);
+    color: #5c2946;
+    font-weight: bold;
 }
 
+td {
+    padding: 12px;
+    background: #ffe9ef;
+    border-bottom: 1px solid #ffd1dc;
+}
+
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
+    padding: 18px;
     margin-top: 30px;
-    padding: 15px;
+    background: #ffffffcc;
+    backdrop-filter: blur(6px);
+    font-size: 14px;
+    color: #ba597a;
+    border-top: 2px solid #ffc2d1;
+}
+
+/* ===== MESSAGE TEXT ===== */
+.msg {
+    text-align: center;
+    background: #ffe1e8;
+    padding: 10px;
+    border-radius: 10px;
+    color: #c65275;
+    margin-bottom: 15px;
+    border: 1px solid #ffbfd0;
 }
